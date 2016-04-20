@@ -1,5 +1,5 @@
 FROM ubuntu
-MAINTAINER ubuntu-apache2 PhilippeAssis <assis@philippeassis.com>
+MAINTAINER philippeassis/docker-ubuntu-apache2 PhilippeAssis <assis@philippeassis.com>
 
 # Setup environment
 ENV DEBIAN_FRONTEND noninteractive
