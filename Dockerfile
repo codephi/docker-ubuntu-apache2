@@ -23,7 +23,7 @@ RUN apt-get install -y openssh-server openssh-client passwd
 RUN mkdir -p /var/run/sshd
 
 RUN sed -ri 's/PermitRootLogin without-password/PermitRootLogin yes/g' /etc/ssh/sshd_config
-RUN echo 'root:changeme' | chpasswd
+RUN echo 'root:root' | chpasswd
 RUN mkdir -p /root/.ssh && touch /root/.ssh/authorized_keys && chmod 700 /root/.ssh
 
 ################################################
